@@ -8,7 +8,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.onPrimary,
       appBar: AppBar(
-        title: const Text('Weather App'),
+        title: const Text('Weather App',style: TextStyle(),),
         centerTitle: true,
         backgroundColor: Theme.of(context).colorScheme.primary,
       ),
