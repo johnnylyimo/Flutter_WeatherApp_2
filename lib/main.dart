@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const Home(),
     );
-  } 
+  }
 }
 
 class MyHomePage extends StatefulWidget {
