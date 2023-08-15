@@ -31,8 +31,9 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
+        // Tear Color is Teal for seedColor & inversePrimary > #14b8a6
         colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.deepPurple,
+            seedColor: const Color(0xff14b8a6),
             inversePrimary: const Color(0xff14b8a6)),
         useMaterial3: true,
       ),
