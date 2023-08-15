@@ -8,8 +8,8 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Weather App'),
-        centerTitle:true,
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        centerTitle: true,
+        backgroundColor: Theme.of(context).colorScheme.primary,
       ),
     );
   }
