@@ -16,7 +16,11 @@ class Home extends StatelessWidget {
         ),
         centerTitle: true,
         backgroundColor: Theme.of(context).colorScheme.primary,
-        actions: [],
+        actions: [
+          IconButton(
+            
+          ),
+        ],
       ),
     );
   }
