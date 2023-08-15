@@ -18,8 +18,10 @@ class Home extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.primary,
         actions: [
           IconButton(
-            
-          ),
+            onPressed: () {
+              debugPrint('hello');
+            },
+          
         ],
       ),
     );
