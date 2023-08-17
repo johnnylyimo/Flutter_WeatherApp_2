@@ -105,15 +105,15 @@ class Home extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  ForecastCard(),
-                  ForecastCard(),
-                  ForecastCard(),
-                  ForecastCard(),
-                  ForecastCard(),
-                  ForecastCard(),
-                  ForecastCard(),
-                  ForecastCard(),
-                  ForecastCard(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
+                  HourlyForecastItem(),
                 ],
               ),
             )
@@ -124,8 +124,8 @@ class Home extends StatelessWidget {
   }
 }
 
-class ForecastCard extends StatelessWidget {
-  const ForecastCard({
+class HourlyForecastItem extends StatelessWidget {
+  const HourlyForecastItem({
     super.key,
   });
 
