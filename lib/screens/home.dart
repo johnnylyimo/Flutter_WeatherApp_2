@@ -101,14 +101,16 @@ class Home extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            const Row(
+            Row(
               children: [
                 Card(
                   elevation: 6.0,
-                  color: Color(0xff99F6EC),
-                  child: Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Column(
+                  color: const Color(0xff99F6EC),
+                  child: Container(
+                    
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
+                    child: const Column(
                       children: [
                         Text(
                           '03:00',
