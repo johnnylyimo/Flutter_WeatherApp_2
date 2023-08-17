@@ -102,6 +102,7 @@ class Home extends StatelessWidget {
               height: 5,
             ),
             const SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
                   ForecastCard(),
