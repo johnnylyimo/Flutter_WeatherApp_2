@@ -29,7 +29,11 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             Card(
-              child: Column(),
+              child: Column(
+                children: [
+                  Text()
+                ],
+              ),
             )
           ],
         ),
