@@ -125,6 +125,7 @@ class Home extends StatelessWidget {
                           color: Colors.white,
                         ),
                         SizedBox(
+                          height: 5,
                         ),
                       
                       ],
