@@ -42,46 +42,51 @@ class Home extends StatelessWidget {
                 shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(30)),
                 ),
-                child: BackdropFilter(
-                  filter: ImageFilter.blur(
-                    sigmaX: 2,
-                    sigmaY: 2,
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.all(10.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                          "300 °F",
-                          style: TextStyle(
-                            fontSize: 32,
-                            fontWeight: FontWeight.bold,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(
+                      sigmaX: 2,
+                      sigmaY: 2,
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.all(10.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            "300 °F",
+                            style: TextStyle(
+                              fontSize: 32,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Icon(
-                          Icons.cloud,
-                          color: Colors.white,
-                          size: 68,
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Text(
-                          'Rain',
-                          style: TextStyle(
-                            fontSize: 22,
+                          SizedBox(
+                            height: 5,
                           ),
-                        )
-                      ],
+                          Icon(
+                            Icons.cloud,
+                            color: Colors.white,
+                            size: 68,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Rain',
+                            style: TextStyle(
+                              fontSize: 22,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
               ),
-            )
+            ),
+            const SizedBox(
+            ),
           ],
         ),
       ),
