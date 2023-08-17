@@ -107,7 +107,10 @@ class Home extends StatelessWidget {
                   color: Color(0xff99F6EC),
                   child: Column(
                     children: [
-                      Text('03:00'),
+                      Text(
+                        '03:00',
+                        style: TextStyle(),
+                      ),
                       SizedBox(
                         height: 5,
                       ),
