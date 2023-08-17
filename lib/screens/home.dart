@@ -49,7 +49,8 @@ class Home extends StatelessWidget {
                       Icons.cloud,
                       color: Colors.white,
                       size: 68,
-                    )
+                    ),
+                    Text()
                   ],
                 ),
               ),
