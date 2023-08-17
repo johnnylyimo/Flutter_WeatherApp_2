@@ -50,7 +50,7 @@ class Home extends StatelessWidget {
                       color: Colors.white,
                       size: 68,
                     ),
-                    Text('Rain')
+                    Text('Rain',style: TextStyle(),)
                   ],
                 ),
               ),
