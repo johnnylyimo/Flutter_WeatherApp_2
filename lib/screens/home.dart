@@ -111,6 +111,7 @@ class Home extends StatelessWidget {
                         '03:00',
                         style: TextStyle(
                           fontSize: 16,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       SizedBox(
