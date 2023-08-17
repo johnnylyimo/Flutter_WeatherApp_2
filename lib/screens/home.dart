@@ -31,7 +31,12 @@ class Home extends StatelessWidget {
           children: [
             Card(
               child: Column(
-                children: [Text("300 °F")],
+                children: [
+                  Text(
+                    "300 °F",
+                    style: TextStyle(),
+                  ),
+                ],
               ),
             )
           ],
