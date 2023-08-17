@@ -104,6 +104,7 @@ class Home extends StatelessWidget {
             const Row(
               children: [
                 Card(
+                  elevation: 6.0,
                   color: Color(0xff99F6EC),
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
