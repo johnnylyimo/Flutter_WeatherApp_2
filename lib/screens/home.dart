@@ -106,7 +106,7 @@ class Home extends StatelessWidget {
                 Card(
                   child: Column(
                     children: [
-                      Text(),
+                      Text('03:00'),
                     ],
                   ),
                 )
