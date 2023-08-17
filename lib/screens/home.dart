@@ -28,10 +28,10 @@ class Home extends StatelessWidget {
       body: Container(
         child: Column(
           children: [
-            Card(
-              child: Column(
+             Card(
+              child:Column(
                 children: [
-                  Text()
+                  Text("300 °F")
                 ],
               ),
             )
