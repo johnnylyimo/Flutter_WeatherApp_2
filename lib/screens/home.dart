@@ -31,6 +31,7 @@ class Home extends StatelessWidget {
         child: const Column(
           children: [
             Card(
+              color: Color(0xff99F6EC),
               child: Column(
                 children: [
                   Text(
