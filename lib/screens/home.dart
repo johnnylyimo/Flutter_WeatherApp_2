@@ -89,7 +89,8 @@ class Home extends StatelessWidget {
               height: 30,
             ),
             const Align(
-              child:  Text(
+              alignment: Alignment.centerLeft,
+              child: Text(
                 'Weather Forecast',
                 style: TextStyle(
                   fontSize: 24,
