@@ -128,7 +128,8 @@ class Home extends StatelessWidget {
                           height: 5,
                         ),
                         Text(
-                   
+                          '120.23',
+                         
                         ),
                       ],
                     ),
