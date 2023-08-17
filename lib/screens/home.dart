@@ -45,12 +45,19 @@ class Home extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                    SizedBox(
+                    ),
                     Icon(
                       Icons.cloud,
                       color: Colors.white,
                       size: 68,
                     ),
-                    Text('Rain',style: TextStyle(),)
+                    Text(
+                      'Rain',
+                      style: TextStyle(
+                        fontSize: 22,
+                      ),
+                    )
                   ],
                 ),
               ),
