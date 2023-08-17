@@ -104,6 +104,7 @@ class Home extends StatelessWidget {
             const Row(
               children: [
                 Card(
+                  color: Color(0xff99F6EC),
                   child: Column(
                     children: [
                       Text('03:00'),
