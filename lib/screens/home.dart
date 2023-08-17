@@ -12,6 +12,7 @@ class Home extends StatelessWidget {
           'Weather App',
           style: TextStyle(
             fontWeight: FontWeight.bold,
+            fontSize: 30,
           ),
         ),
         centerTitle: true,
