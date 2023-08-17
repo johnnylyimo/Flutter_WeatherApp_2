@@ -108,6 +108,7 @@ class Home extends StatelessWidget {
                   color: const Color(0xff99F6EC),
                   child: Container(
                     width: 100,
+                    height: 100,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20, vertical: 8.0),
                     child: const Column(
