@@ -123,7 +123,10 @@ class Home extends StatelessWidget {
                           Icons.cloud,
                           size: 30,
                           color: Colors.white,
-                        )
+                        ),
+                        SizedBox(
+                        ),
+                      
                       ],
                     ),
                   ),
