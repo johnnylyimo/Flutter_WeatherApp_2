@@ -112,7 +112,7 @@ class Home extends StatelessWidget {
                       ),
                       Icon(
                         Icons.cloud,
-                       
+                        size: 30,
                       )
                     ],
                   ),
