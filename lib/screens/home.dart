@@ -53,6 +53,8 @@ class Home extends StatelessWidget {
                       color: Colors.white,
                       size: 68,
                     ),
+                    SizedBox(
+                    ),
                     Text(
                       'Rain',
                       style: TextStyle(
