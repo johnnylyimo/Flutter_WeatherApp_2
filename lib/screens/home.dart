@@ -88,11 +88,13 @@ class Home extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            const Text(
-              'Weather Forecast',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+            const Align(
+              child:  Text(
+                'Weather Forecast',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             )
           ],
