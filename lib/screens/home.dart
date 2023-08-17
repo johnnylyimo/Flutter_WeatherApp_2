@@ -46,6 +46,7 @@ class Home extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
+                      height: 5,
                     ),
                     Icon(
                       Icons.cloud,
