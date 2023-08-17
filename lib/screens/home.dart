@@ -26,6 +26,7 @@ class Home extends StatelessWidget {
         ],
       ),
       body: Container(
+        width: double.infinity,
         padding: const EdgeInsets.all(10.0),
         child: const Column(
           children: [
