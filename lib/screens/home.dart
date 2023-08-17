@@ -105,24 +105,26 @@ class Home extends StatelessWidget {
               children: [
                 Card(
                   color: Color(0xff99F6EC),
-                  child: Column(
-                    children: [
-                      Text(
-                        '03:00',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                  child: Padding(
+                    child: Column(
+                      children: [
+                        Text(
+                          '03:00',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Icon(
-                        Icons.cloud,
-                        size: 30,
-                        color: Colors.white,
-                      )
-                    ],
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Icon(
+                          Icons.cloud,
+                          size: 30,
+                          color: Colors.white,
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
