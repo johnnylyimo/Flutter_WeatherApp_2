@@ -104,7 +104,14 @@ class Home extends StatelessWidget {
             const Row(
               children: [
                 ForecastCard(),
-                
+                ForecastCard(),
+                ForecastCard(),
+                ForecastCard(),
+                ForecastCard(),
+                ForecastCard(),
+                ForecastCard(),
+                ForecastCard(),
+                ForecastCard(),
               ],
             )
           ],
