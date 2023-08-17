@@ -27,7 +27,9 @@ class Home extends StatelessWidget {
       ),
       body: Container(
         child: Column(
-          children: [],
+          children: [
+            Card()
+          ],
         ),
       ),
     );
