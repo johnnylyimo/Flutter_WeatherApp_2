@@ -26,13 +26,12 @@ class Home extends StatelessWidget {
         ],
       ),
       body: Container(
-        child: Column(
+        padding: const EdgeInsets.all(10.0),
+        child: const Column(
           children: [
-             Card(
-              child:Column(
-                children: [
-                  Text("300 °F")
-                ],
+            Card(
+              child: Column(
+                children: [Text("300 °F")],
               ),
             )
           ],
