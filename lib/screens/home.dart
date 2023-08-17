@@ -106,6 +106,7 @@ class Home extends StatelessWidget {
                 Card(
                   color: Color(0xff99F6EC),
                   child: Padding(
+                    padding: EdgeInsets.all(8.0),
                     child: Column(
                       children: [
                         Text(
