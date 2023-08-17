@@ -36,7 +36,7 @@ class Home extends StatelessWidget {
               child: const Card(
                 color: Color(0xff99F6EC),
                 child: Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(10.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
