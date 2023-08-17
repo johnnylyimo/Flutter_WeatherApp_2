@@ -35,6 +35,7 @@ class Home extends StatelessWidget {
               width: MediaQuery.of(context).size.width / 1.3,
               child: const Card(
                 color: Color(0xff99F6EC),
+                elevation: 10,
                 child: Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Column(
