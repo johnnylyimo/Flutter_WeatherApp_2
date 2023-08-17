@@ -43,7 +43,9 @@ class Home extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(30)),
                 ),
                 child: BackdropFilter(
-             
+                  filter: ImageFilter.blur(
+                    sigmaX: 2,
+                    sigmaY: 2,
                   ),
                   child: const Padding(
                     padding: EdgeInsets.all(10.0),
