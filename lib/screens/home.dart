@@ -54,6 +54,7 @@ class Home extends StatelessWidget {
                       size: 68,
                     ),
                     SizedBox(
+                      height: 5,
                     ),
                     Text(
                       'Rain',
