@@ -28,20 +28,24 @@ class Home extends StatelessWidget {
       body: Container(
         width: double.infinity,
         padding: const EdgeInsets.all(10.0),
-        child: const Column(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Card(
-              color: Color(0xff99F6EC),
-              child: Column(
-                children: [
-                  Text(
-                    "300 °F",
-                    style: TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
+            SizedBox(
+              width: MediaQuery.of(context).size.width / 1.3,
+              child: const Card(
+                color: Color(0xff99F6EC),
+                child: Column(
+                  children: [
+                    Text(
+                      "300 °F",
+                      style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             )
           ],
