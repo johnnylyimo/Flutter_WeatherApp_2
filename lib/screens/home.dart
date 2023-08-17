@@ -130,7 +130,8 @@ class Home extends StatelessWidget {
                         Text(
                           '120.23',
                           style: TextStyle(
-                            
+                            fontSize: 14,
+                          ),
                         ),
                       ],
                     ),
