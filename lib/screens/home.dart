@@ -45,7 +45,9 @@ class Home extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Icon()
+                    Icon(
+                      Icons.cloud,
+                    )
                   ],
                 ),
               ),
