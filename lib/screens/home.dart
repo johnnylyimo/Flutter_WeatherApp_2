@@ -92,6 +92,7 @@ class Home extends StatelessWidget {
               'Weather Forecast',
               style: TextStyle(
                 fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
             )
           ],
