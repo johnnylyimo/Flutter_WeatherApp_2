@@ -36,6 +36,7 @@ class Home extends StatelessWidget {
               child: const Card(
                 color: Color(0xff99F6EC),
                 elevation: 10,
+                shape: RoundedRectangleBorder(),
                 child: Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Column(
