@@ -101,18 +101,20 @@ class Home extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            const Row(
-              children: [
-                ForecastCard(),
-                ForecastCard(),
-                ForecastCard(),
-                ForecastCard(),
-                ForecastCard(),
-                ForecastCard(),
-                ForecastCard(),
-                ForecastCard(),
-                ForecastCard(),
-              ],
+            const SingleChildScrollView(
+              child: Row(
+                children: [
+                  ForecastCard(),
+                  ForecastCard(),
+                  ForecastCard(),
+                  ForecastCard(),
+                  ForecastCard(),
+                  ForecastCard(),
+                  ForecastCard(),
+                  ForecastCard(),
+                  ForecastCard(),
+                ],
+              ),
             )
           ],
         ),
