@@ -90,7 +90,7 @@ class Home extends StatelessWidget {
             ),
             const Text(
               'Weather Forecast',
-           
+              style: TextStyle(),
             )
           ],
         ),
