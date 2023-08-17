@@ -107,6 +107,9 @@ class Home extends StatelessWidget {
                   child: Column(
                     children: [
                       Text('03:00'),
+                      SizedBox(
+                      ),
+                  
                     ],
                   ),
                 )
