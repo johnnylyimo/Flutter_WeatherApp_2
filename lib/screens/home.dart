@@ -104,6 +104,9 @@ class Home extends StatelessWidget {
             const Row(
               children: [
                 Card(
+                  child: Column(
+                    
+                  ),
                 )
               ],
             )
