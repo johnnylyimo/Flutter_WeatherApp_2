@@ -36,6 +36,7 @@ class Home extends StatelessWidget {
                     "300 °F",
                     style: TextStyle(
                       fontSize: 32,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
