@@ -105,7 +105,9 @@ class Home extends StatelessWidget {
               children: [
                 Card(
                   child: Column(
-                    
+                    children: [
+                      Text(),
+                    ],
                   ),
                 )
               ],
