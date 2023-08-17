@@ -97,7 +97,10 @@ class Home extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            )
+            ),
+            const SizedBox(
+            ),
+            
           ],
         ),
       ),
