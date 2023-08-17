@@ -131,6 +131,7 @@ class Home extends StatelessWidget {
                           '120.23',
                           style: TextStyle(
                             fontSize: 14,
+                            fontWeight: FontWeight.w400,
                           ),
                         ),
                       ],
