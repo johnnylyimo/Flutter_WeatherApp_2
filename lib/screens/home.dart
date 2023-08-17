@@ -34,7 +34,9 @@ class Home extends StatelessWidget {
                 children: [
                   Text(
                     "300 °F",
-                    style: TextStyle(),
+                    style: TextStyle(
+                      fontSize: 32,
+                    ),
                   ),
                 ],
               ),
