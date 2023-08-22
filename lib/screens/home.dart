@@ -149,7 +149,9 @@ class Home extends StatelessWidget {
                   label: 'Wind Speed',
                   value: '7.5',
                 ),
-                AdditionalInfoItem(),
+                AdditionalInfoItem(
+                  icon: Icons.beach_access,
+                ),
               ],
             )
           ],
