@@ -130,6 +130,7 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox()
           ],
         ),
       ),
