@@ -124,6 +124,7 @@ class Home extends StatelessWidget {
               'Additional Information',
               style: TextStyle(
                 fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],
