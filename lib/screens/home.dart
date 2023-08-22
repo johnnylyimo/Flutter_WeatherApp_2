@@ -35,6 +35,7 @@ class Home extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(
+              height: 30,
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width / 1.3,
