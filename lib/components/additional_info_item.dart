@@ -6,7 +6,8 @@ class AdditionalInfoItem extends StatelessWidget {
   final String value;
   const AdditionalInfoItem({
     super.key,
-    required this.icon
+    required this.icon,
+    required this.label,
   });
 
   @override
