@@ -122,7 +122,9 @@ class Home extends StatelessWidget {
             ),
             const Text(
               'Additional Information',
-              style: TextStyle(),
+              style: TextStyle(
+                fontSize: 24,
+              ),
             ),
           ],
         ),
