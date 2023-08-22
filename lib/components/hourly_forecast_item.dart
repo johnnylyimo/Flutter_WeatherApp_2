@@ -35,7 +35,7 @@ class HourlyForecastItem extends StatelessWidget {
               height: 5,
             ),
             Icon(
-              Icons.cloud,
+              icon,
               size: 30,
               color: Colors.white,
             ),
