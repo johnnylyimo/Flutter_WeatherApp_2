@@ -135,7 +135,11 @@ class Home extends StatelessWidget {
             ),
             Row(
               children: [
-                Column()
+                Column(
+                  children: [
+                    Icon()
+                  ],
+                )
               ],
             )
           ],
