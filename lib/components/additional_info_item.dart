@@ -27,7 +27,7 @@ class AdditionalInfoItem extends StatelessWidget {
           height: 5,
         ),
         Text(
-          '91',
+          value,
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
