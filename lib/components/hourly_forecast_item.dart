@@ -43,7 +43,7 @@ class HourlyForecastItem extends StatelessWidget {
               height: 5,
             ),
             Text(
-              '120.23',
+              temperature,
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w400,
