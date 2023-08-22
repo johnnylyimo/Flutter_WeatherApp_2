@@ -119,8 +119,8 @@ class Home extends StatelessWidget {
             ),
             const SizedBox(
               height: 10,
-            )
-            Text()
+            ),
+            const Text('Additional Information'),
           ],
         ),
       ),
