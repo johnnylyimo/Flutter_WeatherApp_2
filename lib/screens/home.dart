@@ -140,7 +140,8 @@ class Home extends StatelessWidget {
                     Icon(
                       Icons.water_drop,
                       size: 32,
-                    )
+                    ),
+                    SizedBox()
                   ],
                 )
               ],
