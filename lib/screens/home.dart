@@ -146,9 +146,9 @@ class Home extends StatelessWidget {
                     ),
                     Text('Humidity'),
                     SizedBox(
-                      height: 8,
+                      height: 5,
                     ),
-                    Text()
+                    Text('91'),
                   ],
                 )
               ],
