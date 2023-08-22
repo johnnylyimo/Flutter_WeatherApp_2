@@ -22,11 +22,11 @@ class HourlyForecastItem extends StatelessWidget {
         width: 100,
         height: 100,
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-        child: const Column(
+        child:  Column(
           children: [
             Text(
-              '03:00',
-              style: TextStyle(
+              time,
+              style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
