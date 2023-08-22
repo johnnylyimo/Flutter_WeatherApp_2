@@ -34,6 +34,8 @@ class Home extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            const SizedBox(
+            ),
             SizedBox(
               width: MediaQuery.of(context).size.width / 1.3,
               child: Card(
