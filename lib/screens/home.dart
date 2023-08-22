@@ -147,6 +147,7 @@ class Home extends StatelessWidget {
                 AdditionalInfoItem(
                   icon: Icons.air,
                   label: 'Wind Speed',
+                  value: '7.5',
                 ),
                 AdditionalInfoItem(),
               ],
