@@ -118,10 +118,11 @@ class Home extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
-            Align(
-              child: const Text(
+            const Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
                 'Additional Information',
                 style: TextStyle(
                   fontSize: 24,
