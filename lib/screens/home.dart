@@ -144,7 +144,9 @@ class Home extends StatelessWidget {
                   label: 'Humadity',
                   value: '91',
                 ),
-                AdditionalInfoItem(),
+                AdditionalInfoItem(
+                  icon: Icons.air,
+                ),
                 AdditionalInfoItem(),
               ],
             )
