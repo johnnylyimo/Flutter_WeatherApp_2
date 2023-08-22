@@ -9,6 +9,7 @@ class HourlyForecastItem extends StatelessWidget {
     super.key,
     required this.time,
     required this.temperature,
+    required this.icon,
     
   });
 
