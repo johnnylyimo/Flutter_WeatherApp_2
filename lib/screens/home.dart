@@ -128,7 +128,11 @@ class Home extends StatelessWidget {
                     icon: Icons.sunny,
                     temperature: '249.22',
                   ),
-                  HourlyForecastItem(),
+                  HourlyForecastItem(
+                    time: '02:00',
+                    icon: Icons.cloud,
+                    temperature: '301.22',
+                  ),
                   HourlyForecastItem(),
                   HourlyForecastItem(),
                   HourlyForecastItem(),
