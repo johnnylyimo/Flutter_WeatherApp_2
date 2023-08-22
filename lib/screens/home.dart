@@ -139,6 +139,7 @@ class Home extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.water_drop,
+                      size: 32,
                     )
                   ],
                 )
