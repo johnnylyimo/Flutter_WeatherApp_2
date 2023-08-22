@@ -148,7 +148,10 @@ class Home extends StatelessWidget {
                     SizedBox(
                       height: 5,
                     ),
-                    Text('91'),
+                    Text(
+                      '91',
+                      style: TextStyle(),
+                    ),
                   ],
                 )
               ],
