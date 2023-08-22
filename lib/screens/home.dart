@@ -133,7 +133,11 @@ class Home extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Row()
+            Row(
+              children: [
+                Column()
+              ],
+            )
           ],
         ),
       ),
