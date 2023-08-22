@@ -151,6 +151,7 @@ class Home extends StatelessWidget {
                 ),
                 AdditionalInfoItem(
                   icon: Icons.beach_access,
+                  label: 'Pressure',
                 ),
               ],
             )
