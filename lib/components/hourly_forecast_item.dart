@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HourlyForecastItem extends StatelessWidget {
+  final String time;
   const HourlyForecastItem({
     super.key,
   });
