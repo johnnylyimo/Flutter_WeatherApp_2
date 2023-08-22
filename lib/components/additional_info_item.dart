@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AdditionalInfoItem extends StatelessWidget {
+  final IconData icon;
   const AdditionalInfoItem({super.key});
 
   @override
