@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class HourlyForecastItem extends StatelessWidget {
   final String time;
   final String temperature;
+  final IconData icon;
   const HourlyForecastItem({
     super.key,
   });
