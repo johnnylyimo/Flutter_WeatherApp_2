@@ -86,7 +86,7 @@ class Home extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 30,
+              height: 50,
             ),
             const Align(
               alignment: Alignment.centerLeft,
@@ -118,7 +118,7 @@ class Home extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 20,
+              height: 50,
             ),
             const Align(
               alignment: Alignment.centerLeft,
@@ -131,7 +131,7 @@ class Home extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 8,
+              height: 5,
             ),
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
