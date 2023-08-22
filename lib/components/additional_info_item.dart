@@ -13,22 +13,22 @@ class AdditionalInfoItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       children: [
         Icon(
           icon,
           size: 32,
         ),
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
         Text(label),
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
         Text(
           value,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
           ),
