@@ -116,7 +116,8 @@ class Home extends StatelessWidget {
                   HourlyForecastItem(),
                 ],
               ),
-            )
+            ),
+            SizedBox()
           ],
         ),
       ),
