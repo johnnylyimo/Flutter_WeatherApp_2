@@ -141,6 +141,7 @@ class Home extends StatelessWidget {
               children: [
                 AdditionalInfoItem(
                   icon: Icons.water_drop,
+                  label: 'Humadity',
                 ),
                 AdditionalInfoItem(),
                 AdditionalInfoItem(),
