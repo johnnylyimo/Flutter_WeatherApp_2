@@ -10,7 +10,6 @@ class HourlyForecastItem extends StatelessWidget {
     required this.time,
     required this.temperature,
     required this.icon,
-    
   });
 
   @override
@@ -22,7 +21,7 @@ class HourlyForecastItem extends StatelessWidget {
         width: 100,
         height: 100,
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
-        child:  Column(
+        child: Column(
           children: [
             Text(
               time,
@@ -31,7 +30,7 @@ class HourlyForecastItem extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Icon(
@@ -39,12 +38,12 @@ class HourlyForecastItem extends StatelessWidget {
               size: 30,
               color: Colors.white,
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Text(
               temperature,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w400,
               ),
