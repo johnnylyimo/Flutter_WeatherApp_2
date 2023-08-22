@@ -134,6 +134,7 @@ class Home extends StatelessWidget {
               height: 8,
             ),
             const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 AdditionalInfoItem(),
                 AdditionalInfoItem(),
