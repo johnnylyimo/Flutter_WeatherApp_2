@@ -139,7 +139,9 @@ class Home extends StatelessWidget {
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                AdditionalInfoItem(),
+                AdditionalInfoItem(
+                  icon: Icons.water_drop,
+                ),
                 AdditionalInfoItem(),
                 AdditionalInfoItem(),
               ],
