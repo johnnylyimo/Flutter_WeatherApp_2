@@ -135,28 +135,9 @@ class Home extends StatelessWidget {
             ),
             const Row(
               children: [
-                Column(
-                  children: [
-                    Icon(
-                      Icons.water_drop,
-                      size: 32,
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text('Humidity'),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      '91',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                )
+                AdditionalInfoItem(),
+                AdditionalInfoItem(),
+                AdditionalInfoItem(),
               ],
             )
           ],
@@ -165,4 +146,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
