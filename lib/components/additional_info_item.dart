@@ -22,7 +22,7 @@ class AdditionalInfoItem extends StatelessWidget {
         SizedBox(
           height: 5,
         ),
-        Text('Humidity'),
+        Text(label),
         SizedBox(
           height: 5,
         ),
