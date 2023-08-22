@@ -108,8 +108,16 @@ class Home extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  HourlyForecastItem(time: '00:00', icon: Icons.cloud, temperature: '301.22',),
-                  HourlyForecastItem(),
+                  HourlyForecastItem(
+                    time: '00:00',
+                    icon: Icons.cloud,
+                    temperature: '301.22',
+                  ),
+                  HourlyForecastItem(
+                    time: '03:00',
+                    icon: Icons.sunny,
+                    temperature: '275.10',
+                  ),
                   HourlyForecastItem(),
                   HourlyForecastItem(),
                   HourlyForecastItem(),
