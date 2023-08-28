@@ -66,6 +66,7 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: FutureBuilder(
+        future: getCurrentWeather(),
         builder:(context,snapshot) {
           return Container(
           width: double.infinity,
