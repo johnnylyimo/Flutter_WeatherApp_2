@@ -84,6 +84,7 @@ class _HomeState extends State<Home> {
           }
 
           final data = snapshot.data!;
+          final currentTemp = data['list'][0]['main']['temp']; 
 
           return Container(
             width: double.infinity,
