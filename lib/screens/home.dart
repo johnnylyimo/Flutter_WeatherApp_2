@@ -85,6 +85,7 @@ class _HomeState extends State<Home> {
 
           final data = snapshot.data!;
           final currentTemp = data['list'][0]['main']['temp'];
+          final currentSky= data['list'][0]['weather']['main'];
 
           return Container(
             width: double.infinity,
@@ -114,32 +115,32 @@ class _HomeState extends State<Home> {
                           sigmaX: 2,
                           sigmaY: 2,
                         ),
-                        child: const Padding(
+                        child:  Padding(
                           padding: EdgeInsets.all(10.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                "300k",
-                                style: TextStyle(
+                                "$currentTemp K",
+                                style: const TextStyle(
                                   fontSize: 32,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
-                              Icon(
+                              const Icon(
                                 Icons.cloud,
                                 color: Colors.white,
                                 size: 68,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
-                              Text(
-                                'Rain',
-                                style: TextStyle(
+                               Text(
+                                currentSky,
+                                style: const TextStyle(
                                   fontSize: 22,
                                 ),
                               )
