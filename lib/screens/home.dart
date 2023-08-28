@@ -78,9 +78,11 @@ class _HomeState extends State<Home> {
           }
 
           if (!snapshot.hasData) {
-           
+            return const Center(
+              child: Text('No data available'),
+            );
           }
-
+          
           return Container(
             width: double.infinity,
             padding: const EdgeInsets.all(10.0),
