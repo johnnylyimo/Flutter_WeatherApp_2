@@ -15,7 +15,8 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   String city = 'London';
 
-  // openWeatherAPIKey is API key value stored on /lib/secrets.dart, API key is given from openWeather after signup
+  /// openWeatherAPIKey is API key value stored on /lib/secrets.dart, API key is given from openWeather after signup
+  /// <Map<String, dynamic>>  : { 'string':object/string/int/float }
   Future<Map<String, dynamic>> getCurrentWeather() async {
     try {
       final res = await http.get(
@@ -75,6 +76,11 @@ class _HomeState extends State<Home> {
               child: Text(snapshot.error.toString()),
             );
           }
+
+          if (!snapshot.hasData) {
+           
+          }
+
           return Container(
             width: double.infinity,
             padding: const EdgeInsets.all(10.0),
