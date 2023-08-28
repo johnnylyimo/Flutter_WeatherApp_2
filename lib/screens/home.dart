@@ -16,19 +16,21 @@ class _HomeState extends State<Home> {
   String city = 'London';
 
   // openWeatherAPIKey is API key value stored on /lib/secrets.dart, API key is given from openWeather after signup
-  Future getCurrentWeather() async {
+  Future<Map<String,dynamic>> getCurrentWeather() async {
     try {
       final res = await http.get(
         Uri.parse(
             'https://api.openweathermap.org/data/2.5/forecast?q=$city&APPID=$openWeatherAPIKey'),
       );
+
       final data = jsonDecode(res.body); // convert from json format to string
-      
+
       if (data['cod'] != '200') {
         throw 'An expected error occurred';
       }
 
       debugPrint('DEBUG res $data');
+      return data;
     } catch (e) {
       throw e.toString();
     }
@@ -63,157 +65,161 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
-      body: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.all(10.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const SizedBox(
-              height: 30,
-            ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width / 1.3,
-              child: Card(
-                color: const Color(0xff99F6EC),
-                elevation: 10,
-                shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(30)),
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
-                  child: BackdropFilter(
-                    filter: ImageFilter.blur(
-                      sigmaX: 2,
-                      sigmaY: 2,
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.all(10.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            "300k",
-                            style: TextStyle(
-                              fontSize: 32,
-                              fontWeight: FontWeight.bold,
+      body: FutureBuilder(
+        builder:(context,snapshot) {
+          return Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const SizedBox(
+                height: 30,
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 1.3,
+                child: Card(
+                  color: const Color(0xff99F6EC),
+                  elevation: 10,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(30)),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: BackdropFilter(
+                      filter: ImageFilter.blur(
+                        sigmaX: 2,
+                        sigmaY: 2,
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              "300k",
+                              style: TextStyle(
+                                fontSize: 32,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          Icon(
-                            Icons.cloud,
-                            color: Colors.white,
-                            size: 68,
-                          ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          Text(
-                            'Rain',
-                            style: TextStyle(
-                              fontSize: 22,
+                            SizedBox(
+                              height: 5,
                             ),
-                          )
-                        ],
+                            Icon(
+                              Icons.cloud,
+                              color: Colors.white,
+                              size: 68,
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              'Rain',
+                              style: TextStyle(
+                                fontSize: 22,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            const Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Weather Forecast',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
+              const SizedBox(
+                height: 50,
+              ),
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Weather Forecast',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 5,
-            ),
-            const SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
+              const SizedBox(
+                height: 5,
+              ),
+              const SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    HourlyForecastItem(
+                      time: '00:00',
+                      icon: Icons.cloud,
+                      temperature: '301.22',
+                    ),
+                    HourlyForecastItem(
+                      time: '03:00',
+                      icon: Icons.sunny,
+                      temperature: '375.10',
+                    ),
+                    HourlyForecastItem(
+                      time: '06:00',
+                      icon: Icons.cloud,
+                      temperature: '301.22',
+                    ),
+                    HourlyForecastItem(
+                      time: '06:00',
+                      icon: Icons.sunny,
+                      temperature: '349.22',
+                    ),
+                    HourlyForecastItem(
+                      time: '02:00',
+                      icon: Icons.cloud,
+                      temperature: '301.22',
+                    ),
+                    HourlyForecastItem(
+                      time: '06:00',
+                      icon: Icons.cloudy_snowing,
+                      temperature: '10.22',
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Additional Information',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  HourlyForecastItem(
-                    time: '00:00',
-                    icon: Icons.cloud,
-                    temperature: '301.22',
+                  AdditionalInfoItem(
+                    icon: Icons.water_drop,
+                    label: 'Humadity',
+                    value: '91',
                   ),
-                  HourlyForecastItem(
-                    time: '03:00',
-                    icon: Icons.sunny,
-                    temperature: '375.10',
+                  AdditionalInfoItem(
+                    icon: Icons.air,
+                    label: 'Wind Speed',
+                    value: '7.5',
                   ),
-                  HourlyForecastItem(
-                    time: '06:00',
-                    icon: Icons.cloud,
-                    temperature: '301.22',
-                  ),
-                  HourlyForecastItem(
-                    time: '06:00',
-                    icon: Icons.sunny,
-                    temperature: '349.22',
-                  ),
-                  HourlyForecastItem(
-                    time: '02:00',
-                    icon: Icons.cloud,
-                    temperature: '301.22',
-                  ),
-                  HourlyForecastItem(
-                    time: '06:00',
-                    icon: Icons.cloudy_snowing,
-                    temperature: '10.22',
+                  AdditionalInfoItem(
+                    icon: Icons.beach_access,
+                    label: 'Pressure',
+                    value: '1000',
                   ),
                 ],
-              ),
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            const Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Additional Information',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 5,
-            ),
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                AdditionalInfoItem(
-                  icon: Icons.water_drop,
-                  label: 'Humadity',
-                  value: '91',
-                ),
-                AdditionalInfoItem(
-                  icon: Icons.air,
-                  label: 'Wind Speed',
-                  value: '7.5',
-                ),
-                AdditionalInfoItem(
-                  icon: Icons.beach_access,
-                  label: 'Pressure',
-                  value: '1000',
-                ),
-              ],
-            )
-          ],
-        ),
+              )
+            ],
+          ),
+        );
+        },
       ),
     );
   }
