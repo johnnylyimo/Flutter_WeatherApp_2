@@ -29,17 +29,11 @@ class _HomeState extends State<Home> {
         throw 'An expected error occurred';
       }
 
-      debugPrint('DEBUG res $data');
+      // debugPrint('DEBUG res $data');
       return data;
     } catch (e) {
       throw e.toString();
     }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    getCurrentWeather();
   }
 
   @override
@@ -71,8 +65,12 @@ class _HomeState extends State<Home> {
           debugPrint('DEBUG snapshot $snapshot');
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(
-              child: CircularProgressIndicator(),
+              child: CircularProgressIndicator.adaptive(),
             );
+          }
+
+          if (snapshot.hasError) {
+            return Center();
           }
           return Container(
             width: double.infinity,
