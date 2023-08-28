@@ -70,7 +70,9 @@ class _HomeState extends State<Home> {
         builder: (context, snapshot) {
           debugPrint('DEBUG snapshot $snapshot');
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const CircularProgressIndicator();
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
           }
           return Container(
             width: double.infinity,
