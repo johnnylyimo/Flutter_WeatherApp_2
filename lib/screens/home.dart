@@ -82,7 +82,9 @@ class _HomeState extends State<Home> {
               child: Text('No data available'),
             );
           }
-          
+
+          final data = snapshot.data!;
+
           return Container(
             width: double.infinity,
             padding: const EdgeInsets.all(10.0),
