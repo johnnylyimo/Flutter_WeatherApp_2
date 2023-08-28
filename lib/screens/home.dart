@@ -11,6 +11,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  Future<Map<String, dynamic>> getCurrentWeather() {}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
