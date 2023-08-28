@@ -23,6 +23,10 @@ class _HomeState extends State<Home> {
             'https://api.openweathermap.org/data/2.5/forecast?q=$city&APPID=$openWeatherAPIKey'),
       );
       final data = jsonDecode(res.body); // convert from json format to string
+      
+      if (data['cod'] != '200') {
+        throw 'An expected error occurred';
+      }
 
       debugPrint('DEBUG res $data');
     } catch (e) {
