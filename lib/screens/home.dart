@@ -93,9 +93,12 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(
-                  height: 30,
+               
                 ),
                 Text('City: ${data['city']['name']}'),
+                const SizedBox(
+                  height: 20,
+                ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width / 1.3,
                   child: Card(
