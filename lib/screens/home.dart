@@ -229,10 +229,10 @@ class _HomeState extends State<Home> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    const AdditionalInfoItem(
+                    AdditionalInfoItem(
                       icon: Icons.water_drop,
                       label: 'Humadity',
-                      value: '91',
+                      value: currentHumidity.toString(),
                     ),
                     AdditionalInfoItem(
                       icon: Icons.air,
