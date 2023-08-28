@@ -13,7 +13,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  String city = 'London';
+  String city = 'Dar-es-salaam';
 
   /// openWeatherAPIKey is API key value stored on /lib/secrets.dart, API key is given from openWeather after signup
   /// <Map<String, dynamic>>  : { 'string':object/string/int/float }
@@ -84,7 +84,7 @@ class _HomeState extends State<Home> {
           }
 
           final data = snapshot.data!;
-          final currentTemp = data['list'][0]['main']['temp']; 
+          final currentTemp = data['list'][0]['main']['temp'];
 
           return Container(
             width: double.infinity,
@@ -95,6 +95,7 @@ class _HomeState extends State<Home> {
                 const SizedBox(
                   height: 30,
                 ),
+                Text(),
                 SizedBox(
                   width: MediaQuery.of(context).size.width / 1.3,
                   child: Card(
