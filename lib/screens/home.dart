@@ -27,6 +27,7 @@ class _HomeState extends State<Home> {
 
       if (data['cod'] != '200') {
         throw 'An expected error occurred';
+        // throw data['message'];
       }
 
       // debugPrint('DEBUG res $data');
@@ -71,7 +72,7 @@ class _HomeState extends State<Home> {
 
           if (snapshot.hasError) {
             return Center(
-              child: Text(),
+              child: Text(snapshot.error.toString()),
             );
           }
           return Container(
