@@ -163,7 +163,7 @@ class _HomeState extends State<Home> {
                 const Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    'Weather Forecast',
+                    ' Hourly Forecast',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
