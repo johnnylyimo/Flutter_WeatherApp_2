@@ -11,8 +11,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  String city = 'London';
   Future<Map<String, dynamic>> getCurrentWeather() {
-    http.get(Uri.parse());
   }
 
   @override
