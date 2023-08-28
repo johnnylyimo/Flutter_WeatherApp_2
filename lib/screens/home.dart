@@ -58,7 +58,7 @@ class Home extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
-                            "300 °F",
+                            "300k",
                             style: TextStyle(
                               fontSize: 32,
                               fontWeight: FontWeight.bold,
@@ -116,7 +116,7 @@ class Home extends StatelessWidget {
                   HourlyForecastItem(
                     time: '03:00',
                     icon: Icons.sunny,
-                    temperature: '275.10',
+                    temperature: '375.10',
                   ),
                   HourlyForecastItem(
                     time: '06:00',
@@ -126,7 +126,7 @@ class Home extends StatelessWidget {
                   HourlyForecastItem(
                     time: '06:00',
                     icon: Icons.sunny,
-                    temperature: '249.22',
+                    temperature: '349.22',
                   ),
                   HourlyForecastItem(
                     time: '02:00',
@@ -138,9 +138,6 @@ class Home extends StatelessWidget {
                     icon: Icons.cloudy_snowing,
                     temperature: '10.22',
                   ),
-                  HourlyForecastItem(),
-                  HourlyForecastItem(),
-                  HourlyForecastItem(),
                 ],
               ),
             ),
