@@ -68,6 +68,10 @@ class _HomeState extends State<Home> {
       body: FutureBuilder(
         future: getCurrentWeather(),
         builder:(context,snapshot) {
+          debugPrint('DEBUG snapshot $snapshot');
+          if (snapshot.connectionState == ConnectionState.waiting){
+            
+          }
           return Container(
           width: double.infinity,
           padding: const EdgeInsets.all(10.0),
