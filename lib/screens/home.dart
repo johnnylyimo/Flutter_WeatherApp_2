@@ -70,7 +70,9 @@ class _HomeState extends State<Home> {
           }
 
           if (snapshot.hasError) {
-            return Center();
+            return Center(
+              child: Text(),
+            );
           }
           return Container(
             width: double.infinity,
