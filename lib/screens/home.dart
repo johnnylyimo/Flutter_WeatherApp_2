@@ -84,8 +84,9 @@ class _HomeState extends State<Home> {
           }
 
           final data = snapshot.data!;
-          final currentTemp = data['list'][0]['main']['temp'];
-          final currentSky= data['list'][0]['weather']['main'];
+          final currentWeatherData = data['list'][0];
+          final currentTemp = currentWeatherData['main']['temp'];
+          final currentSky = currentWeatherData['weather'][0]['main'];
 
           return Container(
             width: double.infinity,
@@ -115,8 +116,8 @@ class _HomeState extends State<Home> {
                           sigmaX: 2,
                           sigmaY: 2,
                         ),
-                        child:  Padding(
-                          padding: EdgeInsets.all(10.0),
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
@@ -138,7 +139,7 @@ class _HomeState extends State<Home> {
                               const SizedBox(
                                 height: 5,
                               ),
-                               Text(
+                              Text(
                                 currentSky,
                                 style: const TextStyle(
                                   fontSize: 22,
