@@ -11,7 +11,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  Future<Map<String, dynamic>> getCurrentWeather() {}
+  Future<Map<String, dynamic>> getCurrentWeather() {
+    http.get(Uri.parse());
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
