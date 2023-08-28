@@ -87,6 +87,7 @@ class _HomeState extends State<Home> {
           final currentWeatherData = data['list'][0];
           final currentTemp = currentWeatherData['main']['temp'];
           final currentSky = currentWeatherData['weather'][0]['main'];
+          final currentPressure = currentWeatherData['main']['pressure'];
 
           return Container(
             width: double.infinity,
@@ -223,15 +224,15 @@ class _HomeState extends State<Home> {
                 const SizedBox(
                   height: 5,
                 ),
-                const Row(
+                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    AdditionalInfoItem(
+                    const AdditionalInfoItem(
                       icon: Icons.water_drop,
                       label: 'Humadity',
                       value: '91',
                     ),
-                    AdditionalInfoItem(
+                    const AdditionalInfoItem(
                       icon: Icons.air,
                       label: 'Wind Speed',
                       value: '7.5',
@@ -239,7 +240,7 @@ class _HomeState extends State<Home> {
                     AdditionalInfoItem(
                       icon: Icons.beach_access,
                       label: 'Pressure',
-                      value: '1000',
+                      value: currentPressure.toString(),
                     ),
                   ],
                 )
