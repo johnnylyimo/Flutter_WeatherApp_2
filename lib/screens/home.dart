@@ -131,8 +131,10 @@ class _HomeState extends State<Home> {
                               const SizedBox(
                                 height: 5,
                               ),
-                              const Icon(
-                                Icons.cloud,
+                              Icon(
+                                currentSky == 'Clouds' || currentSky == 'Clear'
+                                    ? Icons.cloud
+                                    : Icons.cloudy_snowing,
                                 color: Colors.white,
                                 size: 68,
                               ),
