@@ -216,6 +216,9 @@ class _HomeState extends State<Home> {
                   itemCount: 5,
                   itemBuilder: (context, index) {
                     final hourlyForecast = data['list'][index + 1];
+                    return HourlyForecastItem(
+                     
+                    );
                   },
                 ),
                 const SizedBox(
