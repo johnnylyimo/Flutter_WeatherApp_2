@@ -98,7 +98,7 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const SizedBox(
-                  height: 30,
+                  height: 10,
                 ),
                 Text('City: ${data['city']['name']}'),
                 const SizedBox(
@@ -135,9 +135,11 @@ class _HomeState extends State<Home> {
                                 height: 5,
                               ),
                               Icon(
-                                currentSky == 'Clouds' || currentSky == 'Clear'
+                                currentSky == 'Clouds' ||
+                                        currentSky == 'Rain' ||
+                                        currentSky == 'Clear'
                                     ? Icons.cloud
-                                    : Icons.cloudy_snowing,
+                                    : Icons.sunny,
                                 color: Colors.white,
                                 size: 68,
                               ),
@@ -173,43 +175,44 @@ class _HomeState extends State<Home> {
                 const SizedBox(
                   height: 5,
                 ),
-                const SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      HourlyForecastItem(
-                        time: '00:00',
-                        icon: Icons.cloud,
-                        temperature: '301.22',
-                      ),
-                      HourlyForecastItem(
-                        time: '03:00',
-                        icon: Icons.sunny,
-                        temperature: '375.10',
-                      ),
-                      HourlyForecastItem(
-                        time: '06:00',
-                        icon: Icons.cloud,
-                        temperature: '301.22',
-                      ),
-                      HourlyForecastItem(
-                        time: '06:00',
-                        icon: Icons.sunny,
-                        temperature: '349.22',
-                      ),
-                      HourlyForecastItem(
-                        time: '02:00',
-                        icon: Icons.cloud,
-                        temperature: '301.22',
-                      ),
-                      HourlyForecastItem(
-                        time: '06:00',
-                        icon: Icons.cloudy_snowing,
-                        temperature: '10.22',
-                      ),
-                    ],
-                  ),
-                ),
+                // const SingleChildScrollView(
+                //   scrollDirection: Axis.horizontal,
+                //   child: Row(
+                //     children: [
+                //       HourlyForecastItem(
+                //         time: '00:00',
+                //         icon: Icons.cloud,
+                //         temperature: '301.22',
+                //       ),
+                //       HourlyForecastItem(
+                //         time: '03:00',
+                //         icon: Icons.sunny,
+                //         temperature: '375.10',
+                //       ),
+                //       HourlyForecastItem(
+                //         time: '06:00',
+                //         icon: Icons.cloud,
+                //         temperature: '301.22',
+                //       ),
+                //       HourlyForecastItem(
+                //         time: '06:00',
+                //         icon: Icons.sunny,
+                //         temperature: '349.22',
+                //       ),
+                //       HourlyForecastItem(
+                //         time: '02:00',
+                //         icon: Icons.cloud,
+                //         temperature: '301.22',
+                //       ),
+                //       HourlyForecastItem(
+                //         time: '06:00',
+                //         icon: Icons.cloudy_snowing,
+                //         temperature: '10.22',
+                //       ),
+                //     ],
+                //   ),
+                // ),
+                ListView.builder(),
                 const SizedBox(
                   height: 50,
                 ),
