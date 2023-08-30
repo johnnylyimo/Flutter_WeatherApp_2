@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:ui';
+import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'package:weather_app2/components/index.dart';
 import 'package:http/http.dart' as http;
@@ -223,6 +224,7 @@ class _HomeState extends State<Home> {
                           data['list'][index + 1]['weather'][0]['main'];
                           // using string substring otherwise use intl package
                       final time = DateTime.parse(hourlyForecast['dt_txt']);
+                      final fmtTime = DateFormat.j().format(time);
                       return HourlyForecastItem(
                           time: fmtTime,
                           temperature:
