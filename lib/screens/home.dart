@@ -221,9 +221,12 @@ class _HomeState extends State<Home> {
                       final hourlyForecast = data['list'][index + 1];
                       final hourlySky =
                           data['list'][index + 1]['weather'][0]['main'];
+                          // using string substring otherwise use intl package
+                      final time = DateTime.parse(hourlyForecast['dt_txt']);
                       return HourlyForecastItem(
-                          time: hourlyForecast['dt'].toString(),
-                          temperature: hourlyForecast['main']['temp'].toString(),
+                          time: fmtTime,
+                          temperature:
+                              hourlyForecast['main']['temp'].toString(),
                           icon: hourlySky == 'Clouds' ||
                                   hourlySky == 'Rain' ||
                                   hourlySky == 'Clear'
