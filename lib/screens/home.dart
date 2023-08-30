@@ -214,8 +214,8 @@ class _HomeState extends State<Home> {
                 // ),
                 ListView.builder(
                   itemCount: 5,
-                  itemBuilder: (context, index){
-                    
+                  itemBuilder: (context, index) {
+                    final hourlyForecast = data['list'][index + 1];
                   },
                 ),
                 const SizedBox(
