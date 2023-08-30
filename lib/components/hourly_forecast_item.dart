@@ -18,7 +18,7 @@ class HourlyForecastItem extends StatelessWidget {
       elevation: 6.0,
       color: const Color(0xff99F6EC),
       child: Container(
-        width: 100,
+        width: 112,
         height: 100,
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8.0),
         child: Column(
