@@ -212,22 +212,24 @@ class _HomeState extends State<Home> {
                 //     ],
                 //   ),
                 // ),
-                ListView.builder(
-                  itemCount: 5,
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) {
-                    final hourlyForecast = data['list'][index + 1];
-                    final hourlySky =
-                        data['list'][index + 1]['weather'][0]['main'];
-                    return HourlyForecastItem(
-                        time: hourlyForecast['dt'].toString(),
-                        temperature: hourlyForecast['main']['temp'].toString(),
-                        icon: hourlySky == 'Clouds' ||
-                                hourlySky == 'Rain' ||
-                                hourlySky == 'Clear'
-                            ? Icons.cloud
-                            : Icons.sunny);
-                  },
+                SizedBox(
+                  child: ListView.builder(
+                    itemCount: 5,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      final hourlyForecast = data['list'][index + 1];
+                      final hourlySky =
+                          data['list'][index + 1]['weather'][0]['main'];
+                      return HourlyForecastItem(
+                          time: hourlyForecast['dt'].toString(),
+                          temperature: hourlyForecast['main']['temp'].toString(),
+                          icon: hourlySky == 'Clouds' ||
+                                  hourlySky == 'Rain' ||
+                                  hourlySky == 'Clear'
+                              ? Icons.cloud
+                              : Icons.sunny);
+                    },
+                  ),
                 ),
                 const SizedBox(
                   height: 50,
