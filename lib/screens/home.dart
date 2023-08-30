@@ -218,6 +218,7 @@ class _HomeState extends State<Home> {
                     final hourlyForecast = data['list'][index + 1];
                     return HourlyForecastItem(
                      time: hourlyForecast['dt'].toString(),
+                     temperature: hourlyForecast['main']['temp'].toString(),
                     );
                   },
                 ),
