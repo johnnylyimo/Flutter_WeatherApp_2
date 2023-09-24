@@ -15,6 +15,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   String city = 'Dar-es-salaam';
+  late Future<Map<String, dynamic>> weather;
 
   /// openWeatherAPIKey is API key value stored on /lib/secrets.dart, API key is given from openWeather after signup
   /// <Map<String, dynamic>>  : { 'string':object/string/int/float }
@@ -227,7 +228,7 @@ class _HomeState extends State<Home> {
                       final hourlyForecast = data['list'][index + 1];
                       final hourlySky =
                           data['list'][index + 1]['weather'][0]['main'];
-                          // using string substring otherwise use intl package
+                      // using string substring otherwise use intl package
                       final time = DateTime.parse(hourlyForecast['dt_txt']);
                       final fmtTime = DateFormat.j().format(time);
                       return HourlyForecastItem(
