@@ -63,7 +63,10 @@ class _HomeState extends State<Home> {
         actions: [
           IconButton(
             onPressed: () {
-              debugPrint('hello');
+              // other way of refresh using variable initialized in initState also defined in FutureBuilder's future, otherwise just FutureBuilder call future: getCurrentWeather(), with empty  setState(() {}); will still refresh the data
+              setState(() {
+                weather = getCurrentWeather();
+              });
             },
             icon: const Icon(Icons.refresh),
           ),
