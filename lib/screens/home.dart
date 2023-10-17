@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
         actions: [
           IconButton(
             onPressed: () {
-              // other way of refresh using variable initialized in initState also defined in FutureBuilder's future, otherwise just FutureBuilder call future: getCurrentWeather(), with empty  setState(() {}); will still refresh the data
+              // other way recommended of refresh using variable initialized in initState also defined in FutureBuilder's future, otherwise just FutureBuilder call future: getCurrentWeather(), with empty  setState(() {}); will still refresh the data
               setState(() {
                 weather = getCurrentWeather();
               });
@@ -73,7 +73,8 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: FutureBuilder(
-        future: getCurrentWeather(),
+        future: weather,
+        // future: getCurrentWeather(),
         builder: (context, snapshot) {
           debugPrint('DEBUG snapshot $snapshot');
           if (snapshot.connectionState == ConnectionState.waiting) {
